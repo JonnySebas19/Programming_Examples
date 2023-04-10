@@ -14,7 +14,11 @@ public class Static_Variables_Driver {
         System.out.println(obj1.getNum()); // 2
         System.out.println(obj2.getNum()); // 2
 
-        //All will give the same output, but Static_Variables.getNum() is better because
-        //we would use that everything we use getNum();
+        /*
+        Even though I use the obj1 object to set the number, since it is a static number, it will hold over
+        for different objects.
+        All will give the same output, but Static_Variables.getNum() is better because
+        we would use that everything we use getNum();
+         */
     }
 }
