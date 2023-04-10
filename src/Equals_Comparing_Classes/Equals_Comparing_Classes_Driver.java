@@ -30,11 +30,19 @@ public class Equals_Comparing_Classes_Driver {
 
         /*
         Notes:
+
+        Overloading : When you create a new method / constructor with the same name and return type,
+            but with different arguments.
+            - Common usages are in
+                - constructors
+                - .equals()
+                - .toString() // Is the same as System.out.println(obj);
+
         We use == when comparing the memory address of the object
             - This is why after assigning obj1 = obj2 it becomes true. This
             is the same as with arrays.
 
-        Normally .equals(obj) would be looking at the same thing. Although, I override this
+        Normally .equals(obj) would be looking at the same thing. Although, I overload this
         and have it look at the variables (contents) in the object
             - This is why .equals(obj) is true when num is the same for both objects
          */
@@ -44,7 +52,7 @@ public class Equals_Comparing_Classes_Driver {
             - obj.toString() is the same as obj and prints the address
             Example print : ClassName.ClassName@30f39991
 
-            If we want to make this into a formatted method, we would override it
+            If we want to make this into a formatted method, we would overload it
          */
     }
 }
