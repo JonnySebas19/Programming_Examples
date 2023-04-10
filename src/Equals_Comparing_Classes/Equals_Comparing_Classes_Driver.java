@@ -41,7 +41,9 @@ public class Equals_Comparing_Classes_Driver {
 
         /*
         Extra Notes:
-            - obj.toString() is the same as obj
+            - obj.toString() is the same as obj and prints the address
+            Example print : ClassName.ClassName@30f39991
+
             If we want to make this into a formatted method, we would override it
          */
     }
