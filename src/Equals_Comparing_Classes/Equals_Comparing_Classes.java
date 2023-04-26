@@ -2,9 +2,16 @@ package Equals_Comparing_Classes;
 public class Equals_Comparing_Classes{
     private int num;
 
-    public boolean equals (Equals_Comparing_Classes otherObj)
+    //Overriding because it is the same as the .equals function for the Object Class
+    // ...all classes are extended to Object...
+    @Override
+    public boolean equals (Object otherObj)
     {
-        return (num == otherObj.num);
+        if (otherObj == null || !(otherObj instanceof Equals_Comparing_Classes)){
+            return false;
+        }
+        Equals_Comparing_Classes obj = (Equals_Comparing_Classes) otherObj;
+        return (this.num == obj.num);
     }
 
     public void setNum(int newNum){

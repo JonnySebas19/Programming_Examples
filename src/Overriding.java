@@ -27,13 +27,14 @@ public class Overriding extends Object{
 Notes:
     Overriding:
 
-    Java is pass-by-value.
+    Java is pass-by-value...
     This means that when an argument is plugged in for a parameter (of any type),
     the argument is evaluated and the value obtained is used to initialize the value of the parameter.
     A method can change the instance variables of an object given as an argument. But, if you make that object
     equal a new object, that would not change anything about the original object. It's kinda the same thing how
     we can name the values of things being passed into methods as a completely different name. This is because we
-    are just assigning that new variable to the value of the argument.
+    are just assigning that new variable to the value of the argument. We are allowed to change the values of the
+    things inside the object, just not the value of the object itself.
 
     - Overriding the Object.equals() method that is built into Java. Everything comes from this main class.
     All classes are secretly...  public class Overriding extends Object{};
