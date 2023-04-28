@@ -43,6 +43,14 @@ public class Driver {
         Give me food.
 
         All of these are from the child classes because they override the toString() in the parent class
+
+        Notes:
+        "Extends" can also be said as "Is-A"
+        In this way, we can say that Cat/Dog is an Animal
+
+        Implements/Interface can also be said as "Has-A"
+        - Class A is part of class B (Relates to)
+        - You will not extend this
          */
     }
 }
