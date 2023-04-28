@@ -1,9 +1,10 @@
-public class Overriding extends Object{
+public class Overriding extends Object {
     private String name;
+
     //All classes extend to the class Object, so we are Overriding the Object.equals(otherObject) function
     @Override
     public boolean equals(Object anotherDog) {
-        if (this == anotherDog){
+        if (this == anotherDog) {
             return true;
         }
         //Checking that another dog is actually an instance of the Overriding class
@@ -22,6 +23,23 @@ public class Overriding extends Object{
         return this.name.equals(dog.name);
     }
 }
+
+    // The books version of how to do equals for comparing objects
+    /*
+    @Override
+    public boolean equals(Object otherObject){
+        if (otherObject == null){
+            return false;
+        } else if (getClass() != otherObject.getClass()){
+            return false;
+        } else {
+            Overriding otherDog = (Overriding) otherObject;
+            return this.name.equals(otherDog.name);
+        }
+    }
+}
+
+     */
 
 /*
 Notes:
