@@ -1,9 +1,10 @@
 package Linked_List;
 
-public class Node { // Generic
-    int value;
-    Node next;
-    public Node(int value){
+public class Node<T> { // Generic
+    T value;
+    Node<T> next;
+    public Node(){}
+    public Node(T value){
         this.value = value;
     }
 

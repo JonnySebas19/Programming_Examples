@@ -29,7 +29,7 @@ public class Main {
 
         Can't change the head; Can only change 2, 3, 4
          */
-
+        /*
         ptr = head;
         while (ptr.next != null){
             if (ptr.next.value == 2){
@@ -42,6 +42,7 @@ public class Main {
                 ptr = ptr.next;
             }
         }
+        */
 
         //printList(head);
 
@@ -51,7 +52,8 @@ public class Main {
         // push() puts a plate on top, pop() takes a plate off the top
 
 
-        // Type Node
+        // Stack with type Node
+        // Stack is First In Last Out (FILO)
         Stack<Node> stack = new Stack<>();
 
         //traverse the linked list, and push every node onto the stack
