@@ -30,4 +30,30 @@ public class LinkedStack<T> implements Stack<T>{
         }
         return false;
     }
+    // One way to reverse the nodes using placeholders
+    public void reverse(){
+        Node curr = head.next;
+        Node prev = null;
+        Node next = null;
+
+        while (curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        // curr == null
+        // prev must be at the end
+        head.next = prev;
+    }
+    //TODO
+    public ListNode reverseRecursive(ListNode node){
+        Node curr = head.next;
+        Node prev = null;
+        Node next = null;
+
+        if (node != null){
+
+        }
+    }
 }
